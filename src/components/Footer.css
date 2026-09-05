@@ -1,0 +1,17 @@
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 0px 0; /* Top and bottom padding */
+    background-color: #f3f3f3;
+    color: #333;
+    position: fixed; /* Changed to relative if you want it always at the bottom of the content */
+    bottom: 0;
+    left: 0; /* Align left */
+    width: 100%; /* Ensure it is 100% */
+    box-sizing: border-box; /* Consider border and padding in the width */
+}
+
+.footer p {
+    margin: 0;
+}

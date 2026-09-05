@@ -1,0 +1,51 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif; /* Use Noto Sans JP for a cleaner look */
+  background-color: #FBE4E6; /* Consistent light pink */
+  color: #444; /* Darker color for better readability */
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
+
+button {
+  font-size: 1.25em; /* Larger font size for better readability */
+  padding: 20px 40px; /* Larger buttons */
+  margin: 20px; /* More space around buttons */
+  width: auto; /* Auto width based on content */
+  border-radius: 30px; /* Rounded borders */
+  background-color: #FFC0CB; /* A soft pink that fits the light theme */
+  color: white; /* White text for contrast */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button:hover {
+  background-color: #FFA6C9; /* Slightly darker pink on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Enlarged input fields */
+input[type='date'] {
+  font-size: 1.2em; /* Larger font size */
+  padding: 10px 20px; /* More padding */
+  border-radius: 20px; /* Rounded borders */
+  border: 2px solid #FFC0CB; /* Soft pink border */
+  margin-top: 20px; /* Space from the preceding text */
+}
+
+/* Container adjustments */
+.container {
+  width: 60%; /* Uses more space horizontally */
+  max-width: 640px; /* But won't grow too large on big screens */
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.food-container, .date-container, .confirmation {
+  animation: fadeIn 1s ease-out;
+}
